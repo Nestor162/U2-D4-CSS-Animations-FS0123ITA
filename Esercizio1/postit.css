@@ -29,6 +29,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .postit::before {
   content: "";
   position: absolute;
@@ -54,41 +55,49 @@ p {
 .p1 {
   background-color: var(--yellow);
   transform: rotate(-5deg);
+  transition: all 500ms;
 }
 
 .p2 {
   background-color: var(--green);
   transform: rotate(5deg);
+  transition: all 500ms;
 }
 
 .p3 {
   background-color: var(--purple);
   transform: rotate(-6deg);
+  transition: all 500ms;
 }
 
 .p4 {
   background-color: var(--green);
   transform: rotate(7deg);
+  transition: all 500ms;
 }
 
 .p5 {
   background-color: var(--yellow);
   transform: rotate(5deg);
+  transition: all 500ms;
 }
 
 .p6 {
   background-color: var(--purple);
   transform: rotate(-8deg);
+  transition: all 500ms;
 }
 
 .p7 {
   background-color: var(--yellow);
   transform: rotate(-5deg);
+  transition: all 500ms;
 }
 
 .p8 {
   background-color: var(--green);
   transform: rotate(5deg);
+  transition: all 500ms;
 }
 
 /* Animazione hover */
