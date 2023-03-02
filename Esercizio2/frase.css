@@ -11,14 +11,46 @@
 #testoAlternato {
   font-family: "Bree Serif", serif;
   display: flex;
-  justify-content: center;
   align-items: center;
+  padding-left: 25px;
   width: 600px;
   height: 100px;
   border: 2px solid #000;
   margin: 20px;
 }
 
-span {
+i {
   color: #6a889c;
+  position: absolute;
+  opacity: 0;
+  padding-left: 4px;
+}
+
+i:first-of-type {
+  animation: parole 4s infinite;
+}
+
+i:nth-child(2) {
+  animation: parole 4s infinite 2s;
+}
+
+/* i:nth-child(3) {
+  animation: parole 4s infinite 4s;
+} */
+
+@keyframes parole {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 }
